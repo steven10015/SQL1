@@ -12,8 +12,8 @@ $ psql --version
 
 A continuación, revisa el contenido del archivo `./.env` y sigue los pasos que se describen a continuación:
 
-1. Crea un usuario nuevo para conectarte a tu base de datos: `$ psql -U postgres -c \"CREATE USER gitpod;\"`
-2. Crea una nueva base de datos dentro del motor de Postgres personalizando y ejecutando el siguiente comando: `$ psql -U postgres -c \"CREATE DATABASE sample_db OWNER gitpod;\"`
+1. Crea un usuario nuevo para conectarte a tu base de datos: `$ psql -U postgres -c "CREATE USER gitpod;"`
+2. Crea una nueva base de datos dentro del motor de Postgres personalizando y ejecutando el siguiente comando: `$ psql -U postgres -c "CREATE DATABASE sample_db OWNER gitpod;"`
 3. Conéctate al motor de Postgres para utilizar tu base de datos, manipular tablas y datos:  `$ psql -h localhost -U <username> <db_name>`
 
 > NOTA: Recuerda revisar la información del fichero `./.env` para obtener el `username` y el `db_name`.
