@@ -12,9 +12,10 @@ $ psql --version
 
 Now, review the contents of the `./.env` file and follow the steps described below:
 
-1. Create a new user to connect to your database: `psql -U postgres -c "CREATE USER gitpod;"`
-2. Create a new database within the Postgres engine by customizing and executing the following command: `psql -U postgres -c "CREATE DATABASE sample_db OWNER gitpod;"`
-3. Connect to the Postgres engine to use your database, manipulate tables and data: `$ psql -h localhost -U <username> <db_name>`
+1. Postgres is a database server, you have to start the server before you can use it. In order to stat postgres in your computer run the following command: `sudo service postgresql start`
+2. Create a new user to connect to your database: `psql -U postgres -c "CREATE USER gitpod;"`
+3. Create a new database within the Postgres engine by customizing and executing the following command: `psql -U postgres -c "CREATE DATABASE sample_db OWNER gitpod;"`
+4. Connect to the Postgres engine to use your database, manipulate tables and data: `$ psql -h localhost -U <username> <db_name>`
 
 > NOTE: Remember to check the `./.env` file information to get or set the `username` and `db_name`.
 

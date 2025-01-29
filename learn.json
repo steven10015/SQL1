@@ -14,8 +14,8 @@
 	"syntax": "python",
 	"template_url": "self",
 	"projectType": "project",
-	"autoPlay": "false",
 	"duration" : 2,
+	"autoStart": "false",
 	"description" : {
 		"us": "Create a SQL database using the PostgreSQL engine and using a professional python project structure that includes PIP and environment variables.",
 		"es": "Crea una base de datos SQL utilizando el motor PostgreSQL y una estructura de proyecto profesional en Python que incluya PIP y variables de entorno."
