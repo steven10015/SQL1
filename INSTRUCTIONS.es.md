@@ -8,17 +8,29 @@ Hay un archivo en este proyecto llamado `./requirements.txt` que contiene la lis
 
 ## Parte 2: Incluye las credenciales de tu base de datos
 
-Crea tu archivo `./.env`. Es una buena práctica que cada aplicación de Python tenga un archivo `.env`. El nombre del archivo comienza con un punto `.` porque es un archivo de configuración que será ignorado por tu repositorio Git. Debe ignorarse porque agregaremos la contraseña de nuestra base de datos dentro de ese archivo.
+Para conectar tu aplicación con la base de datos, debes configurar un archivo `.env` en la raíz del proyecto. Este archivo almacena credenciales y configuraciones sensibles de forma segura y debe ser ignorado por Git para evitar exponer información confidencial. En la raíz del proyecto encontrarás un archivo llamado .env.ejemplo, que contiene un formato de referencia para las credenciales de la base de datos.
 
-Escribe las credenciales de tu base de datos dentro del archivo `.env`. Debería quedar algo así (los valores que se incluyen son de ejemplo):
+Crea y abre el archivo `.env` y agrega las credenciales de tu base de datos.
 
-```text
-DB_USER = 'hkietatgd83b4x0l'
-DB_PASSWORD = 'p0s2wasdado1cr02d12'
-DB_PORT = 3306
-DB_HOST = 'f565gmi022AD.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'
-DB_NAME = 'y9uflxvx2hsf11g3f'
-```
+Si ejecutas la base de datos en local:
+
+    
+    DB_HOST="localhost" 
+    DB_PORT= 3306
+    DB_USER="tu_usuario"
+    DB_PASSWORD="tu_contraseña"
+    DB_NAME="nombre_de_tu_base"
+    
+
+Si tu base de datos está alojada en un servicio en la nube, usa las credenciales proporcionadas por tu proveedor (los valores que se incluyen son de ejemplo):
+
+    
+    DB_HOST="f565gmi022AD.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"
+    DB_PORT=3306  # Ajusta el puerto según el servicio
+    DB_USER="hkietatgd83b4x0l"
+    DB_PASSWORD="p0s2wasdado1cr02d12"
+    DB_NAME="y9uflxvx2hsf11g3f"
+    
 
 
 ## Parte 3: Crea una base de datos usando PostgreSQL

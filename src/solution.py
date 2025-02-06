@@ -21,10 +21,11 @@ def connect():
         return None
 
 engine = connect()
-if engine is None:
-    exit()  # Sale si no hay conexión
 
-# 2) Crear las tablas de manera segura
+if engine is None:
+    exit() 
+
+# 2) Crear las tablas
 with engine.connect() as connection:
     connection.execute(text("""
     CREATE TABLE IF NOT EXISTS publishers (
@@ -59,7 +60,7 @@ with engine.connect() as connection:
     );
     """))
 
-# 3) Insertar datos si no existen
+# 3) Insertar datos
 with engine.connect() as connection:
     connection.execute(text("""
     INSERT INTO publishers (publisher_id, name) VALUES
