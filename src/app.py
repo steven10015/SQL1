@@ -1,19 +1,32 @@
 import os
-from sqlalchemy import create_engine
 import pandas as pd
+from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
 
-# load the .env file variables
+# Cargar variables de entorno
 load_dotenv()
 
-# 1) Connect to the database here using the SQLAlchemy's create_engine function
-connection_string = f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}/{os.getenv('DB_NAME')}"
-engine = create_engine(connection_string).execution_options(autocommit=True)
-engine.connect()
+# 1) Conectar a la base de datos con SQLAlchemy
+def connect():
+    global engine
+    try:
+        connection_string = f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}/{os.getenv('DB_NAME')}"
+        print("Starting the connection...")
+        engine = create_engine(connection_string, isolation_level="AUTOCOMMIT") 
+        engine.connect()
+        print("Connected successfully!")
+        return engine
+    except Exception as e:
+        print(f"Error connecting to the database: {e}")
+        return None
+    
+engine = connect()
 
-# 2) Execute the SQL sentences to create your tables using the SQLAlchemy's execute function
+if engine is None:
+    exit() 
 
-# 3) Execute the SQL sentences to insert your data using the SQLAlchemy's execute function
+# 2) Crear las tablas
 
+# 3) Insertar datos
 
-# 4) Use pandas to print one of the tables as dataframes using read_sql function
+# 4) Usar Pandas para leer y mostrar una tabla
