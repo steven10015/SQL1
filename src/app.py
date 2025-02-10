@@ -3,10 +3,10 @@ import pandas as pd
 from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
 
-# Cargar variables de entorno
+# Load environment variables
 load_dotenv()
 
-# 1) Conectar a la base de datos con SQLAlchemy
+# 1) Connect to the database with SQLAlchemy
 def connect():
     global engine
     try:
@@ -25,8 +25,8 @@ engine = connect()
 if engine is None:
     exit() 
 
-# 2) Crear las tablas
+# 2) Create the tables
 
-# 3) Insertar datos
+# 3) Insert data
 
-# 4) Usar Pandas para leer y mostrar una tabla
+# 4) Use Pandas to read and display a table
