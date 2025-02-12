@@ -3,10 +3,10 @@ import pandas as pd
 from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
 
-# Cargar variables de entorno
+# Load environment variables
 load_dotenv()
 
-# 1) Conectar a la base de datos con SQLAlchemy
+# 1) Connect to the database with SQLAlchemy
 def connect():
     global engine
     try:
@@ -25,7 +25,7 @@ engine = connect()
 if engine is None:
     exit() 
 
-# 2) Crear las tablas
+# 2) Create the tables
 with engine.connect() as connection:
     connection.execute(text("""
     CREATE TABLE IF NOT EXISTS publishers (
@@ -60,7 +60,7 @@ with engine.connect() as connection:
     );
     """))
 
-# 3) Insertar datos
+# 3) Insert data
 with engine.connect() as connection:
     connection.execute(text("""
     INSERT INTO publishers (publisher_id, name) VALUES
@@ -85,6 +85,6 @@ with engine.connect() as connection:
     ON CONFLICT (author_id) DO NOTHING;
     """))
 
-# 4) Usar Pandas para leer y mostrar una tabla
+# 4) Use Pandas to read and display a table
 df = pd.read_sql("SELECT * FROM publishers;", engine)
 print(df)

@@ -8,7 +8,7 @@ Hay un archivo en este proyecto llamado `./requirements.txt` que contiene la lis
 
 ## Parte 2: Incluye las credenciales de tu base de datos
 
-Para conectar tu aplicación con la base de datos, debes configurar un archivo `.env` en la raíz del proyecto. Este archivo almacena credenciales y configuraciones sensibles de forma segura y debe ser ignorado por Git para evitar exponer información confidencial. En la raíz del proyecto encontrarás un archivo llamado .env.ejemplo, que contiene un formato de referencia para las credenciales de la base de datos.
+Para conectar tu aplicación con la base de datos, debes configurar un archivo `.env` en la raíz del proyecto. Este archivo almacena credenciales y configuraciones sensibles de forma segura y debe ser ignorado por Git para evitar exponer información confidencial. En la raíz del proyecto encontrarás un archivo llamado .env.example, que contiene un formato de referencia para las credenciales de la base de datos.
 
 Crea y abre el archivo `.env` y agrega las credenciales de tu base de datos.
 
@@ -30,7 +30,7 @@ Si tu base de datos está alojada en un servicio en la nube, usa las credenciale
     DB_USER="hkietatgd83b4x0l"
     DB_PASSWORD="p0s2wasdado1cr02d12"
     DB_NAME="y9uflxvx2hsf11g3f"
-    
+   
 
 
 ## Parte 3: Crea una base de datos usando PostgreSQL
@@ -49,15 +49,15 @@ A continuación, revisa el contenido del archivo `./.env` y sigue los pasos que 
 2. Crea un usuario nuevo para conectarte a tu base de datos: `$ psql -U postgres -c "CREATE USER <DB_USER>;"`
 Este comando significa lo siguiente:
 
-    - psql -U postgres → Conéctate a PostgreSQL usando el usuario administrador predeterminado (postgres).
-    - -c "CREATE USER <DB_USER>;" → Ejecuta el comando SQL para crear un usuario llamado <DB_USER>.
+    - `$ psql -U postgres → Conéctate a PostgreSQL usando el usuario administrador predeterminado (postgres)`.
+    - `$ -c "CREATE USER <DB_USER>;" → Ejecuta el comando SQL para crear un usuario llamado <DB_USER>`.
 
     Si en el .env tienes:
 
         DB_USER = 'mi_usuario'
     El comando que debes ejecutar es:
 
-        psql -U postgres -c "CREATE USER mi_usuario;"
+        `$ psql -U postgres -c "CREATE USER mi_usuario;"`
 
 3. Crea una nueva base de datos dentro del motor de Postgres personalizando y ejecutando el siguiente comando:`$ psql -U postgres -c "CREATE DATABASE <DB_NAME> OWNER <DB_USER>;"`.
 
@@ -68,10 +68,10 @@ Este comando significa lo siguiente:
 
     Entonces el comando sería:
 
-        psql -U postgres -c "CREATE DATABASE mi_base_de_datos OWNER mi_usuario;"
+        `$ psql -U postgres -c "CREATE DATABASE mi_base_de_datos OWNER mi_usuario;"`
 4. Conéctate al motor de Postgres para utilizar tu base de datos, manipular tablas y datos:  `$ psql -h localhost -U <username> <db_name>`
 
-     Recuerda revisar la información del fichero `./.env` para obtener el `username` y el `db_name`.
+> Recuerda revisar la información del fichero `./.env` para obtener el `username` y el `db_name`.
 
 ¡Cuanto estés dentro de PSQL podrás crear tablas, hacer consultas, insertar, actualizar o eliminar datos y mucho más!
 
