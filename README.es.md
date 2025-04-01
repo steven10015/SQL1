@@ -1,13 +1,15 @@
 <!-- hide -->
-# Tutorial de conexión a un Proyecto de Base de Datos SQL  
+# Proyecto SQL: Detectives de Datos del Instituto Global de la Vida 
 <!-- endhide -->
 
-- Crea una base de datos SQL en tu ambiente local utilizando `psql`.
-- Comprende y acostúmbrate a la estructura de proyecto de Python profesional más básica con PIP y `.env`.
+- Usa una base de datos ya preparada con datos cargados previamente.
+- Ejecuta sentencias SQL para explorar y analizar datos en un escenario basado en biodiversidad y cambio climático.
+- Practica cómo insertar, actualizar y eliminar datos relevantes, como parte de una simulación de mantenimiento de calidad de datos.
 - Usa SQL Alchemy, la biblioteca más popular de la industria para conectarse a bases de datos SQL.
-- Usa Pandas para mostrar tablas SQL como marcos de datos.
+- Usa Pandas para mostrar los resultados de tus consultas como DataFrames.
 
-Dentro de este repositorio, encontrarás un archivo llamado `./INSTRUCTIONS.es.md` con los pasos necesarios para completarlo.
+Dentro de este repositorio encontrarás un archivo llamado `./INSTRUCTIONS.es.md` con los pasos necesarios para completarlo.
+
 
 <onlyfor saas="false" withBanner="false">
   
@@ -20,12 +22,12 @@ Recomendamos abrir este mismo repositorio utilizando una herramienta de aprovisi
 Este es el repositorio que necesitas hacer fork y abrir:
 
 ```text
-https://github.com/4GeeksAcademy/connecting-to-a-sql-database-project-tutorial
+https://github.com/4GeeksAcademy/exploratory-sql-analysis-project
 ```
 
 **👉 Por favor sigue estos pasos sobre** [cómo iniciar un proyecto de programación](https://4geeks.com/es/lesson/como-comenzar-un-proyecto-de-codificacion).
 
-Una vez que haya terminado de abrir, puedes abrir el archivo `app.py` y comenzar a resolver.
+Una vez que haya terminado de abrir, puedes abrir el archivo `./src/sql/queries.sql` y comenzar a resolver.
 
 </onlyfor>
 

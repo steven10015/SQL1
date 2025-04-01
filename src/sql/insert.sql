@@ -1,42 +1,33 @@
--- publishers
-INSERT INTO publishers(publisher_id, name) VALUES (1, 'O Reilly Media');
-INSERT INTO publishers(publisher_id, name) VALUES (2, 'A Book Apart');
-INSERT INTO publishers(publisher_id, name) VALUES (3, 'A K PETERS');
-INSERT INTO publishers(publisher_id, name) VALUES (4, 'Academic Press');
-INSERT INTO publishers(publisher_id, name) VALUES (5, 'Addison Wesley');
-INSERT INTO publishers(publisher_id, name) VALUES (6, 'Albert&Sweigart');
-INSERT INTO publishers(publisher_id, name) VALUES (7, 'Alfred A. Knopf');
+-- Inserts sample data for the "Data Detectives" project
 
--- authors 
-INSERT INTO authors (author_id, first_name, middle_name, last_name) VALUES (1, 'Merritt', null, 'Eric');
-INSERT INTO authors (author_id, first_name, middle_name, last_name) VALUES (2, 'Linda', null, 'Mui');
-INSERT INTO authors (author_id, first_name, middle_name, last_name) VALUES (3, 'Alecos', null, 'Papadatos');
-INSERT INTO authors (author_id, first_name, middle_name, last_name) VALUES (4, 'Anthony', null, 'Molinaro');
-INSERT INTO authors (author_id, first_name, middle_name, last_name) VALUES (5, 'David', null, 'Cronin');
-INSERT INTO authors (author_id, first_name, middle_name, last_name) VALUES (6, 'Richard', null, 'Blum');
-INSERT INTO authors (author_id, first_name, middle_name, last_name) VALUES (7, 'Yuval', 'Noah', 'Harari');
-INSERT INTO authors (author_id, first_name, middle_name, last_name) VALUES (8, 'Paul', null, 'Albitz');
+INSERT INTO regions (code, name) VALUES
+('ANDES-N', 'Northern Andes'),
+('SELVA-C', 'Central Jungle'),
+('COSTA-W', 'Western Coast'),
+('PAMPA-S', 'Southern Pampa'),
+('AMAZ-N', 'Northern Amazon');
 
--- books
-INSERT INTO books (book_id, title, total_pages, rating, isbn, published_date, publisher_id) VALUES (1, 'Lean Software Development: An Agile Toolkit', 240, 4.17, '9780320000000', '2003-05-18', 5);
-INSERT INTO books (book_id, title, total_pages, rating, isbn, published_date, publisher_id) VALUES (2, 'Facing the Intelligence Explosion', 91, 3.87, null, '2013-02-01', 7);
-INSERT INTO books (book_id, title, total_pages, rating, isbn, published_date, publisher_id) VALUES (3, 'Scala in Action', 419, 3.74, '9781940000000', '2013-04-10', 1);
-INSERT INTO books (book_id, title, total_pages, rating, isbn, published_date, publisher_id) VALUES (4, 'Patterns of Software: Tales from the Software Community', 256, 3.84, '9780200000000', '1996-08-15', 1);
-INSERT INTO books (book_id, title, total_pages, rating, isbn, published_date, publisher_id) VALUES (5, 'Anatomy Of LISP', 446, 4.43, '9780070000000', '1978-01-01', 3);
-INSERT INTO books (book_id, title, total_pages, rating, isbn, published_date, publisher_id) VALUES (6, 'Computing machinery and intelligence', 24, 4.17, null, '2009-03-22', 4);
-INSERT INTO books (book_id, title, total_pages, rating, isbn, published_date, publisher_id) VALUES (7, 'XML: Visual QuickStart Guide', 269, 3.66, '9780320000000', '2009-01-01', 5);
-INSERT INTO books (book_id, title, total_pages, rating, isbn, published_date, publisher_id) VALUES (8, 'SQL Cookbook', 595, 3.95, '9780600000000', '2005-12-01', 7);
-INSERT INTO books (book_id, title, total_pages, rating, isbn, published_date, publisher_id) VALUES (9, 'The Apollo Guidance Computer: Architecture And Operation (Springer Praxis Books / Space Exploration)', 439, 4.29, '9781440000000', '2010-07-01', 6);
-INSERT INTO books (book_id, title, total_pages, rating, isbn, published_date, publisher_id) VALUES (10, 'Minds and Computers: An Introduction to the Philosophy of Artificial Intelligence', 222, 3.54, '9780750000000', '2007-02-13', 7);
+INSERT INTO species (name, scientific_name, population_estimate, population_max_historic, region_id) VALUES
+('Andean bear', 'Tremarctos ornatus', -50, 400, 1),
+('Jaguar', 'Panthera onca', 120, 200, 2),
+('Sea lion', 'Otaria flavescens', 800, 1200, 3),
+('Andean condor', 'Vultur gryphus', 150, 350, 1),
+('Green anaconda', 'Eunectes murinus', 300, 500, 5),
+('Puma', 'Puma concolor', 240, 400, 2);
 
--- book authors
-INSERT INTO book_authors (book_id, author_id) VALUES (1, 1);
-INSERT INTO book_authors (book_id, author_id) VALUES (2, 8);
-INSERT INTO book_authors (book_id, author_id) VALUES (3, 7);
-INSERT INTO book_authors (book_id, author_id) VALUES (4, 6);
-INSERT INTO book_authors (book_id, author_id) VALUES (5, 5);
-INSERT INTO book_authors (book_id, author_id) VALUES (6, 4);
-INSERT INTO book_authors (book_id, author_id) VALUES (7, 3);
-INSERT INTO book_authors (book_id, author_id) VALUES (8, 2);
-INSERT INTO book_authors (book_id, author_id) VALUES (9, 4);
-INSERT INTO book_authors (book_id, author_id) VALUES (10, 1);
+INSERT INTO climate (region_id, avg_temperature, precipitation_mm) VALUES
+(1, 8.5, 300.25),
+(2, 27.8, 95.00),
+(3, 22.1, 180.60),
+(4, 19.6, 145.80),
+(5, 30.2, 350.00);
+
+INSERT INTO observations (species_id, region_id, observed_at, quantity, observer_name) VALUES
+(1, 1, '2025-01-10', 2, 'cchavez'),
+(2, 2, '2025-02-14', 0, 'jvaldez'),
+(3, 3, '2025-02-20', 5, 'rrojas'),
+(4, 1, '2025-03-05', 3, 'mlinares'),
+(5, 5, '2025-03-07', 1, 'agalvez'),
+(6, 2, '2025-03-01', 2, 'mlinares'),
+(2, 2, '2025-03-10', 1, 'rrojas'),
+(5, 5, '2025-03-15', 0, 'testuser');

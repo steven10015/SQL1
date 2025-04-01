@@ -1,13 +1,14 @@
 <!-- hide -->
-# Connecting to a SQL Database Project Tutorial
+# SQL Project: Global Life Institute Data Detectives
 <!-- endhide -->
 
-- Create a SQL database locally using the `psql` command.
-- Understand and get used to the most basic professional Python project structure with PIP and `.env` file.
-- Use SQL Alchemy, the most popular library in the industry for connecting to SQL databases.
-- Use Pandas to display SQL Tables as dataframes.
+- Use a preloaded database with pre-existing data.
+- Execute SQL statements to explore and analyze data in a biodiversity and climate change scenario.
+- Practice inserting, updating, and deleting relevant data as part of a data quality maintenance simulation.
+- Use SQL Alchemy, the industry's most popular library for connecting to SQL databases.
+- Use Pandas to display the results of your queries as DataFrames.
 
-Inside this repository, you will find a file called `./INSTRUCTIONS.md` with the steps needed to complete it.
+Within this repository, you will find a file named `./INSTRUCTIONS.es.md` with the necessary steps to complete it.
 
 <onlyfor saas="false" withBanner="false">
   
@@ -20,12 +21,12 @@ We recommend opening this very same repository using a provisioning tool like [C
 This is the repository you need to fork and open:
 
 ```text
-https://github.com/4GeeksAcademy/connecting-to-a-sql-database-project-tutorial
+https://github.com/4GeeksAcademy/exploratory-sql-analysis-project
 ```
 
 **👉 Please follow these steps on** [how to start a coding project](https://4geeks.com/lesson/how-to-start-a-project).
 
-Once your project and code have finished opening, you can go ahead and open the `app.py` file and start solving each exercise inside the notebook.
+Once your project and code have finished opening, you can go ahead and open the `./src/sql/queries.sql` file and start solving each exercise inside the notebook.
 
 </onlyfor>
 
@@ -35,4 +36,4 @@ Once you have finished solving the exercises, be sure to commit your changes, pu
 
 ## Solutions
 
-We also incorporated the solution samples on `./src/solution.py` that we strongly suggest you only use if you are stuck for more than 30 min or if you have already finished and want to compare it with your approach.
+We also incorporated the solution samples in `./src/solution.py` that we strongly suggest you only use if you are stuck for more than 30 minutes or if you have already finished and want to compare it with your approach.

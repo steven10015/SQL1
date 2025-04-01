@@ -1,14 +1,11 @@
 {
-	"slug" : "connecting-to-a-sql-database-project-tutorial",
+	"slug" : "exploratory-sql-analysis-project",
 	"title" : {
-		"us": "Connecting to a SQL Database Project Tutorial",
-		"es": "Conectándose a una base de datos SQL por primera vez"
+		"us": "SQL Project: Global Life Institute Data Detectives",
+		"es": "Proyecto SQL: Detectives de Datos del Instituto Global de la Vida"
 	},
-	"preview": "https://github.com/4GeeksAcademy/connecting-to-a-sql-database-project-tutorial/blob/main/assets/preview.png?raw=true",
-	"solution": "https://github.com/4GeeksAcademy/connecting-to-a-sql-database-project-tutorial/blob/main/src/solution.py",
-	"status": "published",
-	"translations": ["us"],
-	"video-id": "nJzQt_3p_TM",
+	"preview": "https://github.com/4GeeksAcademy/exploratory-sql-analysis-project/blob/main/assets/preview.png?raw=true",
+	"solution": "https://github.com/4GeeksAcademy/exploratory-sql-analysis-project/blob/main/src/solution.py",
 	"technologies": ["sql", "mysql", "postgresql", "sqlalchemy", "psycopg2", "pandas", "dotenv", "machine learning", "data science", "back-end", "databases", "python"],
 	"difficulty": "beginner",
 	"syntax": "python",
@@ -16,9 +13,9 @@
 	"projectType": "project",
 	"duration" : 2,
 	"autoStart": "false",
-	"description" : {
-		"us": "Create a SQL database using the PostgreSQL engine and using a professional python project structure that includes PIP and environment variables.",
-		"es": "Crea una base de datos SQL utilizando el motor PostgreSQL y una estructura de proyecto profesional en Python que incluya PIP y variables de entorno."
+	"description": {
+    "us": "In this project, you will learn how to structure a professional Python project focused on analyzing biodiversity and climate data using SQL queries and Python tools like SQLAlchemy and Pandas.",
+    "es": "En este proyecto, aprenderás a estructurar un proyecto profesional en Python centrandote en analizar datos de biodiversidad y clima mediante consultas SQL y herramientas de Python como SQLAlchemy y Pandas."
 	},
 	"gitpod": true
 }
