@@ -14,8 +14,8 @@
 	"duration" : 2,
 	"autoStart": "false",
 	"description": {
-    "us": "In this project, you will learn how to structure a professional Python project focused on analyzing biodiversity and climate data using SQL queries and Python tools like SQLAlchemy and Pandas.",
-    "es": "En este proyecto, aprenderás a estructurar un proyecto profesional en Python centrandote en analizar datos de biodiversidad y clima mediante consultas SQL y herramientas de Python como SQLAlchemy y Pandas."
+	    "us": "In this project, you will learn how to structure a professional Python project focused on analyzing biodiversity and climate data using SQL queries and Python tools like SQLAlchemy and Pandas.",
+	    "es": "En este proyecto, aprenderás a estructurar un proyecto profesional en Python centrandote en analizar datos de biodiversidad y clima mediante consultas SQL y herramientas de Python como SQLAlchemy y Pandas."
 	},
 	"gitpod": true
 }
