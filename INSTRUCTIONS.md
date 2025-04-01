@@ -34,7 +34,22 @@ Other important things to mention about the structure:
 
 Below, you will find real missions from the institute, each designed to develop a different type of SQL query.
 
-1. Open the file `./src/sql/queries.sql` and write the queries as you solve them.
+1. Open the file `./src/sql/queries.sql` and write the queries as you solve them. Separate each query with a semicolon `;`.
+
+    **Example:**
+    ```sql
+    -- Count species per region
+    SELECT r.name, COUNT(*) 
+    FROM species s 
+    JOIN regions r ON s.region_id = r.id 
+    GROUP BY r.name;
+
+    -- Detect extreme temperatures
+    SELECT * FROM climate WHERE avg_temperature > 40 OR avg_temperature < -10;
+    ```
+
+    When you run `app.py`, each query will be automatically executed and displayed as a Pandas DataFrame.
+
 
 2. **Mission 1:** We want to know the biodiversity of each region. Which regions have the most recorded species?
 

@@ -34,7 +34,21 @@ Otras cosas importantes a mencionar sobre la estructura:
 
 A continuación, encontrarás misiones reales del instituto, cada una diseñada para desarrollar un tipo distinto de consulta SQL.
 
-1. Abre el archivo `./src/sql/queries.sql` y escribe las consultas que vas solucionando.
+1. Abre el archivo `./src/sql/queries.sql` y escribe las consultas que vayas resolviendo. Separa cada consulta con un punto y coma `;`.
+
+    **Ejemplo:**
+    ```sql
+    -- Contar especies por región
+    SELECT r.name, COUNT(*) 
+    FROM species s 
+    JOIN regions r ON s.region_id = r.id 
+    GROUP BY r.name;
+
+    -- Detectar temperaturas extremas
+    SELECT * FROM climate WHERE avg_temperature > 40 OR avg_temperature < -10;
+    ```
+
+    Cuando ejecutes `app.py`, cada consulta se ejecutará automáticamente y se mostrará como un DataFrame de Pandas.
 
 2. **Misión 1:** Queremos conocer la biodiversidad de cada región. ¿Qué regiones tienen más especies registradas?
 
