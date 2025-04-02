@@ -1,30 +1,45 @@
+-- create.sql
+-- Creates the necessary tables for the "Data Detectives" project (SQLite version)
+
+DROP TABLE IF EXISTS observations;
+DROP TABLE IF EXISTS climate;
+DROP TABLE IF EXISTS species;
+DROP TABLE IF EXISTS regions;
+
 CREATE TABLE regions (
-    id SERIAL PRIMARY KEY,
-    code VARCHAR(10) UNIQUE NOT NULL,
-    name VARCHAR(100) NOT NULL
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    code TEXT UNIQUE NOT NULL,
+    name TEXT NOT NULL
 );
 
 CREATE TABLE species (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    scientific_name VARCHAR(100),
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    scientific_name TEXT,
     population_estimate INTEGER,
     population_max_historic INTEGER,
-    region_id INTEGER REFERENCES regions(id)
+    region_id INTEGER,
+    FOREIGN KEY (region_id) REFERENCES regions(id)
 );
 
 CREATE TABLE climate (
-    id SERIAL PRIMARY KEY,
-    region_id INTEGER REFERENCES regions(id),
-    avg_temperature DECIMAL(5,2),
-    precipitation_mm DECIMAL(6,2)
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    region_id INTEGER,
+    avg_temperature REAL,
+    precipitation_mm REAL,
+    FOREIGN KEY (region_id) REFERENCES regions(id)
 );
 
 CREATE TABLE observations (
-    id SERIAL PRIMARY KEY,
-    species_id INTEGER REFERENCES species(id),
-    region_id INTEGER REFERENCES regions(id),
-    observed_at DATE,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    species_id INTEGER,
+    region_id INTEGER,
+    observed_at TEXT,
     quantity INTEGER,
-    observer_name VARCHAR(100)
+    observer_name TEXT,
+    FOREIGN KEY (species_id) REFERENCES species(id),
+    FOREIGN KEY (region_id) REFERENCES regions(id)
 );
+
+
+

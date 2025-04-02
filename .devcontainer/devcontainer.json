@@ -4,16 +4,9 @@
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
-	"features": {
-		"ghcr.io/itsmechlark/features/postgresql:1": {
-			"version": "16"
-		}
-	},
 
     "containerEnv": {
-        "PGDATA": "/var/lib/postgresql/data",
-        "PGHOST": "localhost",
-        "PGUSER": "postgres"
+        "DB_PATH": "./data/database.db"
     },
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -23,7 +16,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "cp .env.example .env",
+	"postCreateCommand": "cp .env.example .env && pip install -r requirements.txt && python src/app.py"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
