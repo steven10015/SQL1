@@ -48,27 +48,28 @@ Below, you will find real missions from the institute, each designed to develop 
     SELECT * FROM climate WHERE avg_temperature > 40 OR avg_temperature < -10;
     ```
 
-    When you run `app.py`, each query will be automatically executed and displayed as a Pandas DataFrame.
+    When you finish one or more queries, run the following command in the terminal to see the results:
+
+     ```bash
+     python src/app.py
+     ```
+
+     This will automatically execute each of your queries and display the results in the terminal as a table using Pandas.
+
+     > 💡 **You can modify `queries.sql` as many times as needed** and rerun the command to see the updated results.
 
 
-2. **Mission 1:** We want to know the biodiversity of each region. Which regions have the most recorded species?
+2. **Mission 1:** We want to understand the biodiversity of each region. Which regions have the most recorded species?
 
-    > Use GROUP BY and COUNT(DISTINCT ...).
+3. **Mission 2:** Climate change is a constant concern. We want to list regions with extreme climates:
 
-3. **Mission 2:** Climate change is a constant concern. We want to list the regions with extreme climates:
+     - Average temperatures > 40 °C or < -10 °C
+     - Precipitation < 100 mm
 
-    - Average temperatures > 40 °C or < -10 °C
-    - Precipitation < 100 mm
+4. **Mission 3:** Detect species at risk. Some species have a current population below 20% of their historical maximum population. Which ones are they?
 
-    > Use conditions with WHERE, OR, and relational operators.
-
-4. **Mission 3:** Detect species at risk. There are species whose current population is below 20% of their historical maximum population. Which ones are they?
-
-5. **Mission 4:** Which region has the highest number of distinct observed species?
-
-    > Hint: a JOIN between observations and species, followed by a GROUP BY.
+5. **Mission 4:** Which region has the highest number of distinct species observed?
 
 6. **Mission 5:** Which species have been observed most frequently?
 
-    > Use COUNT(*) and sort the results to show the most observed ones.
 

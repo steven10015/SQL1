@@ -48,53 +48,28 @@ A continuación, encontrarás misiones reales del instituto, cada una diseñada 
     SELECT * FROM climate WHERE avg_temperature > 40 OR avg_temperature < -10;
     ```
 
-    Cuando ejecutes `app.py`, cada consulta se ejecutará automáticamente y se mostrará como un DataFrame de Pandas.
+    Cuando termines una o más consultas, ejecuta el siguiente comando en la terminal para ver los resultados:
+
+    ```bash
+    python src/app.py
+    ```
+
+    Esto correrá automáticamente cada una de tus consultas y mostrará el resultado en la terminal como una tabla con Pandas.
+
+    > 💡 **Puedes modificar `queries.sql` tantas veces como necesites** y volver a ejecutar el comando para ver los nuevos resultados.
+
 
 2. **Misión 1:** Queremos conocer la biodiversidad de cada región. ¿Qué regiones tienen más especies registradas?
-
-    > Usa GROUP BY y COUNT(DISTINCT ...).
 
 3. **Misión 2:** El cambio climático es una preocupación constante. Queremos listar las regiones con climas extremos:
 
     - Temperaturas medias > 40 °C o < -10 °C
     - Precipitaciones < 100 mm
 
-    > Usa condiciones con WHERE, OR, y operadores relacionales.
-
 4. **Misión 3:** Detecta las especies en riesgo. Hay especies cuya población actual está por debajo del 20% de su población histórica máxima. ¿Cuáles son?
 
 5. **Misión 4:** ¿Qué región tiene el mayor número de especies distintas observadas?
 
-    > Pista: un JOIN entre observations y species, seguido de un GROUP BY.
-
 6. **Misión 5:** ¿Qué especies han sido observadas con mayor frecuencia?
 
-    > Usa COUNT(*) y ordena los resultados para mostrar las más observadas.
-<!-- 
-🌐 Misión Abierta: Consulta libre
-Usando tu curiosidad como analista, escribe una consulta que te parezca interesante. Algunas ideas:
-
-¿Qué especies están presentes en más de una región?
-
-¿Cuál es la temperatura promedio de cada región?
-
-¿Cuántas observaciones hay por mes? -->
-
-<!-- 1. Vamos a trabajr en el archivo dentro de la carpeta `src` llamado `./src/app.py`.
-
-> NOTA: Este archivo contendrá la mayor parte del código de tu aplicación, así como la conexión a la base de datos y las consultas a la base de datos.
-
-2. Crea una base de datos PostgreSQL tal y como se indica en la guia.
-
-3. En tu `app.py`, programa la conexión con tu base de datos.
-
-> NOTA: Puedes tratar de reutilizar la función de Python `connect` anteriormente facilitada.
-
-4. Crea las tablas indicadas en `./src/sql/create.sql`.
-
-5. Inserta los datos indicados de `./src/sql/insert.sql` en las tablas creadas en el punto anterior.
-
-6. Usa Pandas para imprimir una de las tablas como DataFrame usando la función `read_sql` de esta librería.
-
--->
 
