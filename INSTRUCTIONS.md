@@ -72,4 +72,10 @@ Below, you will find real missions from the institute, each designed to develop 
 
 6. **Mission 5:** Which species have been observed most frequently?
 
+7. **Mission 6:** We want to identify the most active observers. Who are the people with the highest number of observation records?
+
+8. **Mission 7:** Which species have never been observed?
+
+9. **Mission 8:** What is the average temperature for each region with observed species?
+
 

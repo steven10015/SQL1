@@ -25,3 +25,15 @@ SELECT * FROM observations;
 
 -- MISSION 5
 -- Your query here:
+
+
+-- MISSION 6
+-- Your query here:
+
+
+-- MISSION 7
+-- Your query here:
+
+
+-- MISSION 8
+-- Your query here:

@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from sqlalchemy import create_engine, text
+from sqlalchemy import create_engine
 import pandas as pd
 
 
@@ -9,12 +9,6 @@ load_dotenv()
 
 # Read DB path from environment variable
 DB_PATH = os.getenv('DB_PATH', './data/database.db')  # fallback to default
-print("🔍 File system check:")
-print(" - Current working directory:", os.getcwd())
-print(" - Absolute path to DB:", os.path.abspath(DB_PATH))
-print(" - File exists:", os.path.exists(DB_PATH))
-print(" - File size (bytes):", os.path.getsize(DB_PATH) if os.path.exists(DB_PATH) else "N/A")
-
 DB_URL = f'sqlite:///{DB_PATH}'
 
 # Connect to the existing SQLite database

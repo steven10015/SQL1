@@ -71,5 +71,8 @@ A continuación, encontrarás misiones reales del instituto, cada una diseñada 
 5. **Misión 4:** ¿Qué región tiene el mayor número de especies distintas observadas?
 
 6. **Misión 5:** ¿Qué especies han sido observadas con mayor frecuencia?
+7. **Misión 6:** Queremos identificar a los observadores más activos. ¿Quiénes son las personas que más registros de observación han realizado?
+8. **Misión 7:** ¿Qué especies no han sido observadas nunca?
+9. **Misión 8:** ¿Cuál es la temperatura media por cada región con especies observadas?
 
 
