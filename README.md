@@ -2,6 +2,8 @@
 # SQL Project: Global Life Institute Data Detectives
 <!-- endhide -->
 
+This is what you will learn during this project:
+
 - Use a preloaded database with pre-existing data.
 - Execute SQL statements to explore and analyze data in a biodiversity and climate change scenario.
 - Practice inserting, updating, and deleting relevant data as part of a data quality maintenance simulation.
