@@ -2,6 +2,8 @@
 # Proyecto SQL: Detectives de Datos del Instituto Global de la Vida 
 <!-- endhide -->
 
+Esto es lo que aprenderas con el proyecto:
+
 - Usa una base de datos ya preparada con datos cargados previamente.
 - Ejecuta sentencias SQL para explorar y analizar datos en un escenario basado en biodiversidad y cambio climático.
 - Practica cómo insertar, actualizar y eliminar datos relevantes, como parte de una simulación de mantenimiento de calidad de datos.
@@ -11,7 +13,7 @@
 Dentro de este repositorio encontrarás un archivo llamado `./INSTRUCTIONS.es.md` con los pasos necesarios para completarlo.
 
 
-<onlyfor saas="false" withBanner="false">
+<how-to-start>
   
 ## 🌱 Cómo comenzar este proyecto
 
@@ -29,7 +31,7 @@ https://github.com/4GeeksAcademy/exploratory-sql-analysis-project
 
 Una vez que haya terminado de abrir, puedes abrir el archivo `./src/sql/queries.sql` y comenzar a resolver.
 
-</onlyfor>
+</how-to-start>
 
 ## 🚛 Cómo entregar este proyecto
 
