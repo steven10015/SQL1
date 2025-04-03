@@ -12,7 +12,7 @@ This is what you will learn during this project:
 
 Within this repository, you will find a file named `./INSTRUCTIONS.md` with the necessary steps to complete it.
 
-<how-to-start saas="false" withBanner="false">
+<how-to-start>
   
 ## 🌱 How to start this project
 
