@@ -10,7 +10,7 @@ This is what you will learn during this project:
 - Use SQL Alchemy, the industry's most popular library for connecting to SQL databases.
 - Use Pandas to display the results of your queries as DataFrames.
 
-Within this repository, you will find a file named `./INSTRUCTIONS.es.md` with the necessary steps to complete it.
+Within this repository, you will find a file named `./INSTRUCTIONS.md` with the necessary steps to complete it.
 
 <onlyfor saas="false" withBanner="false">
   
