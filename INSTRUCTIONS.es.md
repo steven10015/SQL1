@@ -1,13 +1,13 @@
 # Consultas SQL + Análisis lógico con Python
 
-¡Bienvenido/a al Instituto Global de la Vida (IGV)! Este centro ficticio monitorea ecosistemas alrededor del planeta para proteger la biodiversidad, entender el cambio climático y tomar decisiones con base en datos.
+¡Bienvenido/a al Instituto Global de la Vida (IGV)! Este centro ficticio monitorea ecosistemas alrededor del planeta para proteger la biodiversidad, entender patrones en la observación de especies y tomar decisiones con base en datos reales.
 
 En tu nuevo rol como analista de datos junior, vas a recibir acceso a una base con información histórica y actual sobre:
 
-- Regiones naturales del mundo.
-- Especies de flora y fauna.
-- Condiciones climáticas por región.
-- Registros de observación de especies.
+- Conocer la biodiversidad por región
+- Identificar especies muy observadas (o poco observadas)
+- Analizar la actividad de los observadores
+- Detectar patrones en el tiempo y el espacio
 
 Tu misión será ejecutar consultas SQL para entender, explorar y detectar patrones relevantes. A medida que avances, podrás visualizar algunos de tus hallazgos usando pandas
 
@@ -19,7 +19,7 @@ La base de datos está cargada y lista para tu análisis. Los archivos provistos
 Una vez hayas completado los pasos anteriores, habrás creado tu base de datos SQL, pero aún no hay tablas. A continuación, debes conectarte a tu base de datos vacía y crearás algunas tablas usando Python mediante scripts SQL que encontrarás en la carpeta `./src/sql/`:
 
 - `./src/sql/create.sql` Tiene las tablas que necesitas: `regions, species, climate, observations`
-- `./src/sql/insert.sql` inserta registros realistas pero ficticios.
+- `./src/sql/insert.sql` Inserta registros obtenidos de una muestra proporcionada por [EOD – eBird Observation](https://www.gbif.org/occurrence)
 - `./src/sql/queries.sql` está vacío y listo para que lo llenes.
 - `./src/app.py` → Contiene la configuración de la base de datos y funciones para ejecutar scripts SQL.
 
@@ -38,12 +38,6 @@ A continuación, encontrarás misiones reales del instituto, cada una diseñada 
 
     **Ejemplo:**
     ```sql
-    -- Contar especies por región
-    SELECT r.name, COUNT(*) 
-    FROM species s 
-    JOIN regions r ON s.region_id = r.id 
-    GROUP BY r.name;
-
     -- Detectar temperaturas extremas
     SELECT * FROM climate WHERE avg_temperature > 40 OR avg_temperature < -10;
     ```
@@ -61,18 +55,36 @@ A continuación, encontrarás misiones reales del instituto, cada una diseñada 
 
 2. **Misión 1:** Queremos conocer la biodiversidad de cada región. ¿Qué regiones tienen más especies registradas?
 
-3. **Misión 2:** El cambio climático es una preocupación constante. Queremos listar las regiones con climas extremos:
+3. **Misión 2:** ¿Qué meses tienen mayor actividad de observación? Agrupa por mes a partir de las fechas de observación reales. Es útil para detectar estacionalidad.
 
-    - Temperaturas medias > 40 °C o < -10 °C
-    - Precipitaciones < 100 mm
-
-4. **Misión 3:** Detecta las especies en riesgo. Hay especies cuya población actual está por debajo del 20% de su población histórica máxima. ¿Cuáles son?
+4. **Misión 3:** Detecta las especies con pocos individuos registrados (posibles casos raros).
 
 5. **Misión 4:** ¿Qué región tiene el mayor número de especies distintas observadas?
 
 6. **Misión 5:** ¿Qué especies han sido observadas con mayor frecuencia?
 7. **Misión 6:** Queremos identificar a los observadores más activos. ¿Quiénes son las personas que más registros de observación han realizado?
-8. **Misión 7:** ¿Qué especies no han sido observadas nunca?
-9. **Misión 8:** ¿Cuál es la temperatura media por cada región con especies observadas?
+8. **Misión 7:** ¿Qué especies no han sido observadas nunca? Comprueba si existen especies en la tabla `species` que no aparecen en `observations`.
+9. **Misión 8:** ¿En qué fechas se observaron más especies distintas? Esta informacion es ideal para explorar la biodiversidad máxima en días específicos.
+
+
+## 🚀 Haz visible tu trabajo
+
+Uno de los principales objetivos de este proyecto es que puedas mostrar habilidades reales y aplicadas en tu perfil profesional. Trabajaste con datos abiertos reales del portal [GBIF](https://www.gbif.org/), ejecutaste consultas SQL, analizaste biodiversidad y visualizaste patrones valiosos.
+
+Publica un insight en LinkedIn que demuestre pensamiento analítico basado en datos reales.
+
+### ¿Qué compartir?
+Con base en tu análisis, redactauna o dos frases que sinteticen lo que descubriste. El objetivo es comunicar tu hallazgo de forma objetiva, breve y con respaldo en los datos. Suma un gráfico si quieres, y usa hashtags para amplificar tu alcance.
+
+### ✨ Ejemplos posteables
+
+> **"Las 5 especies más observadas en mi region [Buenos Aires] representan el 27% del total de registros en esa zona. Su presencia dominante podría indicar hábitos adaptativos únicos. 🐦📍 #Biodiversidad #DataScience"**
+
+> **"New South Wales (Australia) lidera en diversidad con más de 120 especies distintas registradas. ¡Los datos reales de GBIF revelan hotspots inesperados de biodiversidad! 🌿🌏 #SQL #OpenData"**
+
+
+
+
+
 
 
