@@ -65,19 +65,3 @@ Below, you will find real missions from the institute, each designed to develop 
 7. **Mission 6:** We want to identify the most active observers. Who are the people with the most observation records?
 8. **Mission 7:** Which species have never been observed? Check if there are species in the `species` table that do not appear in `observations`.
 9. **Mission 8:** On which dates were the most distinct species observed? This information is ideal for exploring maximum biodiversity on specific days.
-
-
-## 🚀 Make Your Work Visible
-
-One of the main goals of this project is to showcase real and applied skills on your professional profile. You worked with real open data from the [GBIF](https://www.gbif.org/) portal, executed SQL queries, analyzed biodiversity, and visualized valuable patterns.
-
-Publish an insight on LinkedIn that demonstrates analytical thinking based on real data.
-
-### What to Share?
-Based on your analysis, write one or two sentences summarizing what you discovered. The goal is to communicate your findings objectively, briefly, and backed by data. Add a chart if you like, and use hashtags to amplify your reach.
-
-### ✨ Postable Examples
-
-> **"The top 5 most observed species in my region [Buenos Aires] account for 27% of the total records in that area. Their dominant presence might indicate unique adaptive habits. 🐦📍 #Biodiversity #DataScience"**
-
-> **"New South Wales (Australia) leads in diversity with over 120 distinct species recorded. Real GBIF data reveals unexpected biodiversity hotspots! 🌿🌏 #SQL #OpenData"**
