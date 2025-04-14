@@ -67,23 +67,6 @@ A continuación, encontrarás misiones reales del instituto, cada una diseñada 
 9. **Misión 8:** ¿En qué fechas se observaron más especies distintas? Esta informacion es ideal para explorar la biodiversidad máxima en días específicos.
 
 
-## 🚀 Haz visible tu trabajo
-
-Uno de los principales objetivos de este proyecto es que puedas mostrar habilidades reales y aplicadas en tu perfil profesional. Trabajaste con datos abiertos reales del portal [GBIF](https://www.gbif.org/), ejecutaste consultas SQL, analizaste biodiversidad y visualizaste patrones valiosos.
-
-Publica un insight en LinkedIn que demuestre pensamiento analítico basado en datos reales.
-
-### ¿Qué compartir?
-Con base en tu análisis, redactauna o dos frases que sinteticen lo que descubriste. El objetivo es comunicar tu hallazgo de forma objetiva, breve y con respaldo en los datos. Suma un gráfico si quieres, y usa hashtags para amplificar tu alcance.
-
-### ✨ Ejemplos posteables
-
-> **"Las 5 especies más observadas en mi region [Buenos Aires] representan el 27% del total de registros en esa zona. Su presencia dominante podría indicar hábitos adaptativos únicos. 🐦📍 #Biodiversidad #DataScience"**
-
-> **"New South Wales (Australia) lidera en diversidad con más de 120 especies distintas registradas. ¡Los datos reales de GBIF revelan hotspots inesperados de biodiversidad! 🌿🌏 #SQL #OpenData"**
-
-
-
 
 
 
