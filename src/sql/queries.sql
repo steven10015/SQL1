@@ -22,31 +22,31 @@ SELECT * FROM observations;
 
 
 -- MISSION 1
--- Your query here
+-- Your query here;
 
 -- MISSION 2
--- Your query here:
+-- Your query here;
 
 
 -- MISSION 3
--- Your query here:
+-- Your query here;
 
 
 -- MISSION 4
--- Your query here:
+-- Your query here;
 
 
 -- MISSION 5
--- Your query here:
+-- Your query here;
 
 
 -- MISSION 6
--- Your query here:
+-- Your query here;
 
 
 -- MISSION 7
--- Your query here:
+-- Your query here;
 
 
 -- MISSION 8
--- Your query here:
+-- Your query here;
