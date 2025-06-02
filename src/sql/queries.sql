@@ -1,6 +1,19 @@
+-- PLEASE READ THIS BEFORE RUNNING THE EXERCISE
+
+-- ⚠️ IMPORTANT: This SQL file may crash due to two common issues: comments and missing semicolons.
+
+-- ✅ SOLUTIONS:
+-- 1) Always end each SQL query with a semicolon `;`
+-- 2) Ensure comments are well-formed:
+--    - Use `--` for single-line comments only
+--    - Avoid inline comments after queries
+--    - Do not use `/* */` multi-line comments, as they may break execution
+
+-- -----------------------------------------------
 -- queries.sql
--- Complete each mission by writing your SQL query below the instructions.
--- Don't forget to end each query with a semicolon ;
+-- Complete each mission by writing your SQL query
+-- directly below the corresponding instruction
+-- -----------------------------------------------
 
 SELECT * FROM regions;
 SELECT * FROM species;
