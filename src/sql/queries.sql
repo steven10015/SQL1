@@ -2,7 +2,7 @@
 
 -- ⚠️ IMPORTANT: This SQL file may crash due to two common issues: comments and missing semicolons.
 
--- ✅ SOLUTIONS:
+-- ✅ Suggestions:
 -- 1) Always end each SQL query with a semicolon `;`
 -- 2) Ensure comments are well-formed:
 --    - Use `--` for single-line comments only
