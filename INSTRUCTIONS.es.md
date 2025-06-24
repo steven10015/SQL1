@@ -16,8 +16,6 @@ Tu misión será ejecutar consultas SQL para entender, explorar y detectar patro
 
 La base de datos está cargada y lista para tu análisis. Los archivos provistos son:
 
-Una vez hayas completado los pasos anteriores, habrás creado tu base de datos SQL, pero aún no hay tablas. A continuación, debes conectarte a tu base de datos vacía y crearás algunas tablas usando Python mediante scripts SQL que encontrarás en la carpeta `./src/sql/`:
-
 - `./src/sql/create.sql` Tiene las tablas que necesitas: `regions, species, climate, observations`
 - `./src/sql/insert.sql` Inserta registros obtenidos de una muestra proporcionada por [EOD – eBird Observation](https://www.gbif.org/occurrence)
 - `./src/sql/queries.sql` está vacío y listo para que lo llenes.
