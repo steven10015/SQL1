@@ -16,8 +16,6 @@ Your mission will be to execute SQL queries to understand, explore, and detect r
 
 The database is loaded and ready for your analysis. The provided files are:
 
-Once you have completed the previous steps, you will have created your SQL database, but it will still be empty. Next, you need to connect to your empty database and create some tables using Python through SQL scripts found in the `./src/sql/` folder:
-
 - `./src/sql/create.sql` Contains the tables you need: `regions, species, climate, observations`
 - `./src/sql/insert.sql` Inserts records obtained from a sample provided by [EOD – eBird Observation](https://www.gbif.org/occurrence)
 - `./src/sql/queries.sql` is empty and ready for you to fill in.
