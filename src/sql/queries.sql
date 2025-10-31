@@ -50,13 +50,13 @@ WHERE observation_date = "1998-08-08";
 -- Región con más observaciones
 SELECT region_id, COUNT(*) AS conteo_total FROM observations
 GROUP BY region_id
-ORDER by conteo_total DESC;
+ORDER BY conteo_total DESC;
 
 -- MISIÓN 7
 -- Las 5 especies más frecuentes
 SELECT species_id, COUNT(*) AS especies_totales FROM observations
 GROUP BY species_id
-ORDER by especies_totales DESC
+ORDER BY especies_totales DESC
 LIMIT 5;
 
 -- MISIÓN 8
