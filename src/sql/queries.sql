@@ -28,47 +28,47 @@ LIMIT 10;
 
 -- MISIÓN 2
 -- Selección de los id de regiones
-SELECT DISTINCT region_id FROM Observations;
+SELECT DISTINCT region_id FROM observations;
 
 
 -- MISIÓN 3
 -- Conteo de las distintas especies 
-SELECT COUNT(DISTINCT species_id) AS conteo_especies FROM Observations;
+SELECT COUNT(DISTINCT species_id) AS conteo_especies FROM observations;
 
 
 -- MISIÓN 4
 -- Observaciones de la región 2
-SELECT COUNT(*) AS conteo_region_2 FROM Observations
+SELECT COUNT(*) AS conteo_region_2 FROM observations
 WHERE region_id = 2;
 
 -- MISIÓN 5
 -- Observaciones del 1998-08-08
-SELECT * FROM Observations
+SELECT * FROM observations
 WHERE observation_date = "1998-08-08";
 
 -- MISIÓN 6
 -- Región con más observaciones
-SELECT region_id, COUNT(*) AS conteo_total FROM Observations
+SELECT region_id, COUNT(*) AS conteo_total FROM observations
 GROUP BY region_id
-Order by conteo_total desc;
+ORDER by conteo_total DESC;
 
 -- MISIÓN 7
 -- Las 5 especies más frecuentes
-SELECT species_id, COUNT(*) AS especies_totales FROM Observations
+SELECT species_id, COUNT(*) AS especies_totales FROM observations
 GROUP BY species_id
-Order by especies_totales desc
+ORDER by especies_totales DESC
 LIMIT 5;
 
 -- MISIÓN 8
 -- Especies con menos de 5 registros
-SELECT species_id, COUNT(*) AS especies_vistas FROM Observations
+SELECT species_id, COUNT(*) AS especies_vistas FROM observations
 GROUP BY species_id
 HAVING especies_vistas < 5
-ORDER BY especies_vistas desc;
+ORDER BY especies_vistas DESC;
 
 -- MISIÓN 9
 -- Observadores con más observaciones
-SELECT observer, COUNT(*) AS observaciones_hechas FROM Observations
+SELECT observer, COUNT(*) AS observaciones_hechas FROM observations
 GROUP BY observer 
 ORDER BY observaciones_hechas DESC
 LIMIT 5;
